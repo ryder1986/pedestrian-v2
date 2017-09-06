@@ -145,7 +145,7 @@ class Server : public QObject
     Q_OBJECT
 public:
     explicit Server(QObject *parent=0 ):QObject(parent){
-        cam_manager=new CameraManager("/root/repo-github/pedestrian-v1/server/config.json");
+        cam_manager=new CameraManager("/root/repo-github/pedestrian-v2/server/config.json");
         reporter=new ServerInfoReporter();
         bool ret=false;
         server=new QTcpServer();
