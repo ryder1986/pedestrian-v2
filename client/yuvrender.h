@@ -188,7 +188,7 @@ public:
         int len=frame.cols;
         if(frame.cols>0){
              tick++;
-             prt(info,"painting");
+             //prt(info,"painting");
             tick+=10;
             QPainter painter(this);
             paint_layout1(painter);
@@ -285,7 +285,7 @@ public slots:
 
         }
         this->update();
-        prt(info,"update pic menually");
+    //    prt(info,"update pic menually");
     }
 
 private:
